@@ -15,16 +15,14 @@ class DeepSpeechSTT(AbstractSTTEngine):
                  alphabet="models/alphabet.txt"):
 
         self._logger = logging.getLogger(__name__)
-        self._logger.debug("Initializing PocketSphinx Decoder with hmm_dir " +
-                           "'%s'", hmm_dir)
+        self._logger.debug("Initializing DeepSpeech with graph '%s' " +
+                           "and alphabet '%s'", graph, alphabet)
         self._model = Model(graph, 26, 9, alphabet, 500)
 
     @classmethod
     def get_config(cls):
         # FIXME: Replace this as soon as we have a config module
         config = {}
-        # HMM dir
-        # Try to get hmm_dir from config
         profile_path = jasperpath.config('profile.yml')
 
         if os.path.exists(profile_path):
