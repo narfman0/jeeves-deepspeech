@@ -24,5 +24,10 @@ setup(
         'deepspeech',
         'jeeves-pa',
     ],
+    entry_points={
+        'jeeves.stt': [
+            'deepspeech = jeeves_deepspeech.stt:DeepSpeechSTT',
+        ],
+    },
     test_suite='tests/test_jeeves_deepspeech',
 )

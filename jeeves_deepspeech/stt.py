@@ -1,10 +1,12 @@
 import logging
+import os
+import yaml
 
 from deepspeech.model import Model
 import scipy.io.wavfile as wav
 
 from jeeves.stt import AbstractSTTEngine
-from jeeves import settings
+from jeeves import diagnose, settings
 
 
 class DeepSpeechSTT(AbstractSTTEngine):
@@ -14,7 +16,7 @@ class DeepSpeechSTT(AbstractSTTEngine):
 
     SLUG = 'deepspeech'
 
-    def __init__(self, vocabulary, graph="models/output_graph.pb",
+    def __init__(self, graph="models/output_graph.pb",
                  alphabet="models/alphabet.txt"):
 
         self._logger = logging.getLogger(__name__)
