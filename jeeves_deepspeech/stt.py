@@ -1,7 +1,8 @@
 from deepspeech.model import Model
 import scipy.io.wavfile as wav
 
-from client.stt import AbstractSTTEngine
+from jeeves.stt import AbstractSTTEngine
+from jeeves import settings
 
 
 class DeepSpeechSTT(AbstractSTTEngine):
@@ -23,7 +24,7 @@ class DeepSpeechSTT(AbstractSTTEngine):
     def get_config(cls):
         # FIXME: Replace this as soon as we have a config module
         config = {}
-        profile_path = jasperpath.config('profile.yml')
+        profile_path = settings.config('profile.yml')
 
         if os.path.exists(profile_path):
             with open(profile_path, 'r') as f:

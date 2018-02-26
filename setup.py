@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
-from jasper_deepspeech import __version__ as version
+from jeeves_deepspeech import __version__ as version
 
 
 setup(
-    name="jasper-deepspeech",
+    name="jeeves-deepspeech",
     version=version,
-    description=('DeepSpeech STT plugin for Jasper'),
+    description=('DeepSpeech STT plugin for jeeves'),
     classifiers=[
         'Development Status :: 4 - Beta',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
@@ -13,7 +13,7 @@ setup(
         'Programming Language :: Python',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
-    keywords='jasper-deepspeech',
+    keywords='jeeves-deepspeech',
     author='Jon Robison',
     author_email='narfman0@gmail.com',
     license='LICENSE',
@@ -22,7 +22,7 @@ setup(
     zip_safe=True,
     install_requires=[
         'deepspeech',
-        # 'jasper', # pretty sure jasper is not on pypi yet :|
+        'jeeves-pa',
     ],
-    test_suite='tests/test_jasper_deepspeech',
+    test_suite='tests/test_jeeves_deepspeech',
 )

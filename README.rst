@@ -1,22 +1,22 @@
-jasper-deepspeech
+jeeves-deepspeech
 =================
 
 WIP
 
-.. image:: https://badge.fury.io/py/jasper-deepspeech.png
-    :target: https://badge.fury.io/py/jasper-deepspeech
+.. image:: https://badge.fury.io/py/jeeves-deepspeech.png
+    :target: https://badge.fury.io/py/jeeves-deepspeech
 
-.. image:: https://travis-ci.org/narfman0/jasper-deepspeech.png?branch=master
-    :target: https://travis-ci.org/narfman0/jasper-deepspeech
+.. image:: https://travis-ci.org/narfman0/jeeves-deepspeech.png?branch=master
+    :target: https://travis-ci.org/narfman0/jeeves-deepspeech
 
-DeepSpeech STT plugin for Jasper
+DeepSpeech STT plugin for jeeves
 
 Installation
 ------------
 
 Install via pip::
 
-    pip install jasper-deepspeech
+    pip install jeeves-deepspeech
 
 Development
 -----------

@@ -4,10 +4,10 @@ try:
     from unittest import mock
 except ImportError:
     from mock import mock
-from jasper_deepspeech.stt import DeepSpeechSTT
+from jeeves_deepspeech.stt import DeepSpeechSTT
 
 
-class TestJasperDeepSpeech(unittest.TestCase):
+class TestJeevesDeepSpeech(unittest.TestCase):
     def setUp(self):
         pass
 
