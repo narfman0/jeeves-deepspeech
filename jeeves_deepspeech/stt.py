@@ -1,3 +1,5 @@
+import logging
+
 from deepspeech.model import Model
 import scipy.io.wavfile as wav
 
