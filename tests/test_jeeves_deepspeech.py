@@ -1,7 +1,7 @@
 import sys
 import unittest
 
-from jeeves_deepspeech.stt import DeepSpeechSTT
+from jeeves_deepspeech import DeepSpeechSTT
 
 
 class TestJeevesDeepSpeech(unittest.TestCase):
@@ -12,7 +12,7 @@ class TestJeevesDeepSpeech(unittest.TestCase):
         pass
 
     def test_init(self):
-        stt = DeepSpeechSTT(None)
+        stt = DeepSpeechSTT()
         self.assertFalse(stt is None)
 
 

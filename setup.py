@@ -1,10 +1,9 @@
 from setuptools import setup, find_packages
-from jeeves_deepspeech import __version__ as version
 
 
 setup(
     name="jeeves-deepspeech",
-    version=version,
+    version='0.1.4',
     description=('DeepSpeech STT plugin for jeeves'),
     classifiers=[
         'Development Status :: 4 - Beta',
@@ -26,7 +25,7 @@ setup(
     ],
     entry_points={
         'jeeves.stt': [
-            'deepspeech = jeeves_deepspeech.stt:DeepSpeechSTT',
+            'deepspeech = jeeves_deepspeech:DeepSpeechSTT',
         ],
     },
     test_suite='tests/test_jeeves_deepspeech',

@@ -1,0 +1,10 @@
+[Plugin]
+Name = deepspeech-stt
+Version = 1.0.0
+License = GPL3
+URL = http://github.com/narfman0/jeeves-deepspeech
+Description = Speech-To-Text implementation which relies on the deepspeech.
+
+[Author]
+Name = Jon Robison
+URL = http://github.com/narfman0/jeeves-deepspeech
